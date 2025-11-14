@@ -541,6 +541,7 @@ button {
   background: #434f7066;
   border-radius: 4px;
   overflow: hidden;
+  margin-bottom: 48px;
 }
 
 .deals-progress__bar {
@@ -548,4 +549,50 @@ button {
   height: 100%;
   background: #6073a2;
   transition: width 0.35s ease;
+}
+
+.section-about {
+  position: relative;
+  background: #fff;
+  padding: 24px 16px;
+}
+
+.section-about::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 27%;
+  transform: translateX(-42%);
+  width: 272px;
+  height: 82px;
+  background-repeat: no-repeat;
+  background-size: 272px 82px;
+  background-image: url("data:image/svg+xml;utf8,\<svg width='267' height='82' viewBox='0 0 267 82' xmlns='http://www.w3.org/2000/svg'>\<path d='M0 0H222.855C226.179 0 229.232 1.83153 230.796 4.7638L264.939 68.7638C268.137 74.7588 263.793 82 256.998 82H8.99999C4.02943 82 0 77.9706 0 73V0Z' fill='white'/>\</svg>");
+}
+
+.about-content {
+  position: absolute;
+  width: 100%;
+  top: 24px;
+  left: 0;
+  padding: 0 16px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #030718;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #030718;
+  opacity: 0.8;
+  margin-bottom: 20px;
 }
