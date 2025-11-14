@@ -16,7 +16,12 @@
     <header class="header">
       <div class="container">
         <div class="logo">
-          <img src="img/logo.png" alt="TradeBlade Logo" />
+          <img src="img/logo_mob.png" alt="TradeBlade Logo" class="logo-img" />
+        </div>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <nav class="nav">
           <a href="#stats">Цифры</a>
@@ -33,6 +38,29 @@
         </div>
       </div>
     </header>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav__close" id="closeNav">
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="mobile-nav__menu">
+        <a href="#numbers" class="mobile-nav__link">Цифры</a>
+        <a href="#deals" class="mobile-nav__link">Сделки онлайн</a>
+        <a href="#about" class="mobile-nav__link">О компании</a>
+        <a href="#start" class="mobile-nav__link">Как начать</a>
+        <a href="#tariffs" class="mobile-nav__link">Тарифы</a>
+        <a href="#reviews" class="mobile-nav__link">Отзывы</a>
+        <a href="#faq" class="mobile-nav__link">FAQ</a>
+      </nav>
+
+      <div class="mobile-nav__btns">
+        <button class="mobile-nav__btn mobile-nav__btn--reg">
+          Регистрация
+        </button>
+        <button class="mobile-nav__btn mobile-nav__btn--login">Войти</button>
+      </div>
+    </div>
     <main>
       <main>
         <section id="hero" class="hero"></section>
@@ -53,7 +81,7 @@
           <li><a href="#stats"></a>Цифры</li>
           <li><a href="#deals"></a>Сделки онлайн</li>
           <li><a href="#about"></a>О компании</li>
-          <li><a href="#what-is"></a></li>
+          <li><a href="#what-is"></a>TRADEBLADE это</li>
           <li><a href="#how-to-start"></a>Как начать</li>
           <li><a href="#pricing"></a>Тарифы</li>
           <li><a href="#faq"></a>FAQ</li>
@@ -61,5 +89,7 @@
       </div>
       <div class="footer-bottom"></div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
