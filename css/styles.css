@@ -341,4 +341,83 @@ button {
   font-size: 14px;
   line-height: 143%;
   color: fff;
+  opacity: 0.3;
+}
+
+.section-stats {
+  position: relative;
+  background: #fff;
+  padding-bottom: 40px;
+}
+
+.section-stats::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 27%;
+  transform: translateX(-42%);
+  width: 272px;
+  height: 82px;
+  background-repeat: no-repeat;
+  background-size: 272px 82px;
+  background-image: url("data:image/svg+xml;utf8,\
+    <svg width='267' height='82' viewBox='0 0 267 82' xmlns='http://www.w3.org/2000/svg'>\
+    <path d='M0 0H222.855C226.179 0 229.232 1.83153 230.796 4.7638L264.939 68.7638C268.137 74.7588 263.793 82 256.998 82H8.99999C4.02943 82 0 77.9706 0 73V0Z' fill='white'/>\
+    </svg>");
+}
+
+.stats-content {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.stats-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 2px;
+}
+
+.stats-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.04em;
+  color: #000;
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 28px;
+  column-gap: 20px;
+}
+
+.stats-item.full {
+  grid-column: 1 / -1;
+}
+
+.stats-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.stats-value {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #6a54ff;
 }
