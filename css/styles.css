@@ -211,3 +211,134 @@ button {
   border: 1px solid #57e1ff;
   color: #57e1ff;
 }
+
+.hero {
+  position: relative;
+  padding: 40px 16px 61px;
+  overflow: hidden;
+}
+
+.hero__graphics {
+  position: relative;
+  height: 134px;
+  margin-bottom: 33px;
+}
+
+.hero-card {
+  position: absolute;
+  background: #6a54ff;
+  border-radius: 12px;
+  padding: 14px 18px;
+  width: 150px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.hero-card--bottom {
+  width: 176px;
+  height: 104px;
+  padding: 6px 10px;
+  border: 1px dashed #6a54ff;
+  border-radius: 4px;
+  background: transparent;
+  color: #6a54ff;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.hero-card--top {
+  width: 176px;
+  height: 104px;
+  right: 50px;
+  top: 30px;
+  padding: 6px 10px;
+  border: 1px dashed #6a54ff;
+  border-radius: 4px;
+}
+
+.hero-card__text {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.hero-card__type {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  margin-bottom: 20px;
+}
+
+.hero__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 126%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #e7f7f8;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+.hero__form {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 12px;
+}
+
+.hero__input-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero__input-wrap input {
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #201a4f;
+  outline: none;
+}
+
+.hero__input-wrap button {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  height: 42px;
+  width: 102px;
+  padding: 11px 24px;
+  border-radius: 3px;
+  border: 1px solid #57e1ff;
+  background: #57e1ff;
+  box-shadow: 0 0 4px 0 #57e1ff;
+  color: #030718;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.hero__note {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: fff;
+}
