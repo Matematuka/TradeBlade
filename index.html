@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -132,7 +137,84 @@
             </div>
           </div>
         </section>
-        <section id="deals" class="section-deals"></section>
+        <section class="deals">
+          <h2 class="deals__title">Прошедшие сделки</h2>
+          <p class="deals__online">● Онлайн</p>
+
+          <div class="swiper deals-swiper">
+            <div class="swiper-wrapper">
+              <!-- 1 -->
+              <div class="swiper-slide deal-card">
+                <div class="deal-card__bg-logo"></div>
+                <h3 class="deal-card__pair">NEAR/USDT</h3>
+                <p class="deal-card__type"><span>SPOT</span> · 1 мин. назад</p>
+                <p class="deal-card__label">ПРИБЫЛЬ</p>
+                <p class="deal-card__profit">58.6206% ↑</p>
+                <div class="deal-card__footer">
+                  <span class="deal-card__target">Цель 4</span>
+                  <span class="deal-card__date">Дата входа 06.10.2022</span>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="swiper-slide deal-card">
+                <div class="deal-card__bg-logo"></div>
+                <h3 class="deal-card__pair">BTC/USDT</h3>
+                <p class="deal-card__type"><span>SPOT</span> · 1 мин. назад</p>
+                <p class="deal-card__label">ПРИБЫЛЬ</p>
+                <p class="deal-card__profit">6.02% ↑</p>
+                <div class="deal-card__footer">
+                  <span class="deal-card__target">Цель 3</span>
+                  <span class="deal-card__date">Дата входа 06.10.2022</span>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="swiper-slide deal-card">
+                <div class="deal-card__bg-logo"></div>
+                <h3 class="deal-card__pair">ETH/USDT</h3>
+                <p class="deal-card__type"><span>SPOT</span> · 1 мин. назад</p>
+                <p class="deal-card__label">ПРИБЫЛЬ</p>
+                <p class="deal-card__profit">16.3% ↑</p>
+                <div class="deal-card__footer">
+                  <span class="deal-card__target">Цель 4</span>
+                  <span class="deal-card__date">Дата входа 06.10.2022</span>
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="swiper-slide deal-card">
+                <div class="deal-card__bg-logo"></div>
+                <h3 class="deal-card__pair">NEAR/USDT</h3>
+                <p class="deal-card__type"><span>SPOT</span> · 1 мин. назад</p>
+                <p class="deal-card__label">ПРИБЫЛЬ</p>
+                <p class="deal-card__profit">0.963% ↑</p>
+                <div class="deal-card__footer">
+                  <span class="deal-card__target">Цель 4</span>
+                  <span class="deal-card__date">Дата входа 06.10.2022</span>
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="swiper-slide deal-card">
+                <div class="deal-card__bg-logo"></div>
+                <h3 class="deal-card__pair">NEAR/USDT</h3>
+                <p class="deal-card__type"><span>SPOT</span> · 1 мин. назад</p>
+                <p class="deal-card__label">ПРИБЫЛЬ</p>
+                <p class="deal-card__profit">58.6206% ↑</p>
+                <div class="deal-card__footer">
+                  <span class="deal-card__target">Цель 4</span>
+                  <span class="deal-card__date">Дата входа 06.10.2022</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="deals-progress">
+              <div class="deals-progress__bar"></div>
+            </div>
+          </div>
+        </section>
+
         <section id="about" class="section-about"></section>
         <section id="try-now" class="section-cta"></section>
         <section id="what-is" class="section-what"></section>
@@ -156,10 +238,7 @@
       </div>
       <div class="footer-bottom"></div>
     </footer>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
