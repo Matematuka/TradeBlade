@@ -608,8 +608,8 @@ ol {
   width: 376px;
   margin: 0 auto;
   position: relative;
-  margin-top: -88px; /* перекрытие верхней секции */
-  margin-bottom: -130px; /* перекрытие нижней секции */
+  margin-top: -88px;
+  margin-bottom: -130px;
   z-index: 10;
 }
 
@@ -1050,10 +1050,55 @@ ol {
   display: block;
 }
 
-.faq-divider {
-  width: 375px;
-  height: 1px;
-  background: #d9d9d9;
+.footer {
+  background: #030518;
+  padding: 40px 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 42px 57px 16px;
+  gap: 20px;
+}
+
+.footer-col-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
   opacity: 0.4;
-  margin: 20px auto;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.67;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 16px 0;
+  text-align: left;
+}
+
+.footer-logo {
+  margin-bottom: 80px;
+}
+
+.footer-copy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  opacity: 0.5;
 }
