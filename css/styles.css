@@ -1135,7 +1135,7 @@ ol {
   opacity: 0.5;
 }
 
-@media (min-width: 420px) and (max-width: 768px) {
+@media (min-width: 420px) and (max-width: 767px) {
   body {
     max-width: 100% !important;
     background-color: #030718 !important;
@@ -1264,7 +1264,7 @@ ol {
     padding-bottom: 80px;
   }
 
-  .section-stats svg {
+  .section-stats .svg-mobile {
     width: 100%;
     height: 375px;
   }
@@ -1325,9 +1325,13 @@ ol {
     margin: 20px auto 56px;
   }
 
-  .section-about svg {
+  .section-about .svg-mobile {
     width: 100%;
     height: 300px;
+  }
+
+  .section-about .svg-descktop {
+    display: none;
   }
 
   .section-about::before {
@@ -1368,7 +1372,7 @@ ol {
 
   .pricing-tabs {
     width: 100%;
-    max-width: 600px;
+    max-width: 690px;
     height: 60px;
     padding: 6px;
     gap: 12px;
@@ -1533,4 +1537,304 @@ ol {
     font-size: 16px;
     opacity: 0.6;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+  }
+
+  .header .container {
+    max-width: 100%;
+    padding: 16px 16px;
+    gap: 16px;
+  }
+
+  .logo img {
+    width: 85px;
+    height: 40px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    inset: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .nav a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+  }
+
+  .nav a:hover {
+    opacity: 1;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .actions .btn {
+    height: 32px;
+    padding: 6px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .actions .login {
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid #57e1ff;
+    color: #fff;
+    background: rgba(87, 225, 255, 0.2);
+    box-shadow: 0 0 4px 0 #57e1ff;
+  }
+
+  .actions .register {
+    font-weight: 400;
+    background: #57e1ff;
+    border: 1px solid #57e1ff;
+    border-radius: 3px;
+    color: color: #030718;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+   .hero {
+    padding: 80px 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero__graphics {
+    height: 260px;
+    width: 50%;
+    margin: 0;
+    position: relative;
+  }
+
+  .hero-card {
+    width: 220px;
+    height: 140px;
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+
+  .hero-card__text {
+    font-size: 26px;
+  }
+
+  .hero-card__type {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .hero-card--bottom {
+    left: 0;
+    top: 100px;
+    transform: scale(1.05);
+  }
+
+  .hero-card--top {
+    right: 40px;
+    top: 0;
+    transform: scale(1.05);
+  }
+
+  .hero__content {
+    width: 50%;
+    max-width: 420px;
+  }
+
+  .hero__title {
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+
+  .hero__text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .hero__form {
+    height: 60px;
+  }
+
+  .hero__input-wrap input {
+    font-size: 16px;
+    padding: 18px;
+  }
+
+  .hero__input-wrap button {
+    height: 52px;
+    width: 130px;
+    font-size: 15px;
+  }
+
+  .hero__note {
+    font-size: 15px;
+  }
+
+  .section-stats {
+    position: relative;
+    padding-bottom: 120px;
+    background: #fff;
+  }
+
+  .section-stats .svg-mobile {
+    display: none;
+  }
+
+  .section-stats .svg-descktop {
+    width: 100%;
+    height: 420px; 
+  }
+
+  .section-stats::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 18%;
+    transform: translateX(-50%);
+    width: 639px;
+    height: 60px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='639' height='60' viewBox='0 0 639 60' xmlns='http://www.w3.org/2000/svg'><path d='M0 0H575.686C577.808 0 579.843 0.842855 581.343 2.34315L639 60H0V0Z' fill='white'/></svg>");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+  }
+
+  .stats-content {
+    position: absolute;
+    top: 40px;                
+    width: 100%;
+    padding: 0 72px;           
+  }
+
+  .stats-title {
+    font-size: 48px;           
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .stats-subtitle {
+    font-size: 20px;
+    opacity: 0.6;
+    margin-bottom: 60px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 60px;
+  }
+
+  .stats-item.full {
+    grid-column: 1 / 3;
+  }
+
+  .stats-label {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+  }
+
+  .stats-value {
+    font-size: 60px;            
+    font-weight: 500;
+    color: #6a54ff;
+    line-height: 1.2;
+  }
+
+  .deals {
+    max-width: 1024px;
+    padding: 80px 48px 48px;
+  }
+
+  .deals__title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    margin-bottom: 4px;
+  }
+
+  .deals__online {
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: -0.03em;
+  }
+
+  .deals-swiper {
+    padding-bottom: 20px;
+  }
+
+  .deals-progress {
+    width: 88%;
+    height: 10px;
+    margin: 28px auto 72px;
+    background: #434f7066;
+    border-radius: 6px;
+  }
+
+  .deals-progress__bar {
+    height: 100%;
+    background: #6073a2;
+  }
+
+  .section-about .svg-mobile {
+    display: none;
+  }
+
+  .section-about .svg-descktop {
+        width: 100%;
+    height: 350px; 
+  }
+
+  .section-about::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 18%;
+    transform: translateX(-50%);
+    width: 639px;
+    height: 60px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='639' height='60' viewBox='0 0 639 60' xmlns='http://www.w3.org/2000/svg'><path d='M0 0H575.686C577.808 0 579.843 0.842855 581.343 2.34315L639 60H0V0Z' fill='white'/></svg>");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+  }
+
+    .about-content {
+    top: 50px;
+    padding: 0 40px;
+  }
+
+
+
+
 }
