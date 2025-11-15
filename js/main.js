@@ -24,19 +24,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const dealsSwiper = new Swiper(".deals-swiper", {
     slidesPerView: "auto",
     spaceBetween: 8,
+
+    breakpoints: {
+      420: {
+        spaceBetween: 20,
+      },
+    },
+
     centeredSlides: false,
   });
 
   const bar = document.querySelector(".deals-progress__bar");
+
   function updateProgress(sw) {
     if (!bar) return;
-
     const total = sw.slides.length;
     const index = sw.activeIndex;
     const pct = ((index + 1) / total) * 100;
-
     bar.style.width = pct + "%";
   }
+
   updateProgress(dealsSwiper);
   dealsSwiper.on("slideChange", () => updateProgress(dealsSwiper));
 });
